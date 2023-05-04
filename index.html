@@ -3,42 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel ="stylesheet" href = "./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');</style>    
     <title>TOP Landing Page</title>
 </head>
 <body>
 
     <!-- Flexbox with Header content including Logo and navbar links. -->
-    <div class = "header=content-wrapper">
-        <header>
-            <h1 class = "logo">Header Logo</h1>        
-        </header>
+    <div class = "header-content-wrapper">
+        <h1 class = "logo">Header Logo</h1>        
         <nav class = "title_nav">
             <ul>
-                <li>header link one</li>
-                <li>header link two</li>
-                <li>header link three</li>
+                <li><a href="url">header link one</a></li>
+                <li><a href="url">header link two</a></li>
+                <li><a href="url">header link three</a></li>
             </ul>
         </nav>
     </div>
 
+    <!-- Flexbox with Main content including A Left align (Hero Main Text, A subtext, and a subscribe button), and A right Align (An Image). -->
     <div class = "main-content-wrapper">
-
         <div class = "left_align">
             <h2 class = "headline">This website is awesome</h2>  
-            <p>This website some subtext that goes under the main title. It's a smaller fone and the color is lower in contrast. </p>
-            <button type="button" onclick="alert('You have subscribed!')">Subscribe!</button>
+            <div class = "subtext">
+                <p>This website some subtext that goes under the main title. It's a smaller font font and the color is lower in contrast. </p>
+                <button type="button" onclick="alert('You have subscribed!')">Subscribe!</button>
+            </div>
         </div> 
-
         <div class = "right_align">
-            <img src="./images/placeholder.png" alt="A placeholder image for future use">
+            <img class = "home_img" src="./images/placeholder.png" alt="A placeholder image for future use"> 
         </div>
 
     </div>
 
 
-
+    <!-- Flexbox with the Footer Content -->
     <footer>
         <p>
             Copyright © The Odin Project 2023

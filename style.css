@@ -1,0 +1,136 @@
+
+body {
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* All of the below is relating to the Header Content / Nav Bar / Logo. */
+.header-content-wrapper {
+    padding-left: 150px;
+    padding-right: 175px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #1f2937;
+    margin-top: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+    margin-left: 25px;
+    align-items: center;
+    display:flex;
+}
+
+
+nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+ul {
+    display :flex;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+    margin-right: 25px;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+/* End of Header Content Wrapper CSS*/
+
+
+/* Top Main content CSS */
+.main-content-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #1f2937;
+    justify-content: flex-start;
+    gap: 650px;
+    padding-left: 150px;
+    padding-right: 150px
+}
+
+
+
+/* All of the below is related to everything in the first subsection of the screen LHS. (Excluding header) */
+.left_align {
+    flex:1, 300px;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-top: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+    margin-top: 0px;
+}
+
+.subtext p {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin-top: 0px;
+}
+
+.subtext button{
+    background-color: #3882f6; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top:0px;
+}
+/* End of Main content upper LHS CSS*/
+
+/* All of the below is related to everything in the first subsection of the screen RHS. (Excluding header) */
+.right_align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.home_img {
+    display: flex;
+    max-width: 600px;
+    height:auto;
+}
+/* End of Main content upper RHS CSS*/
+/* End of Main content upper wrapper CSS*/
+
+
+
+
+/* Below is the Footer */
+footer {
+    display: flex;;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    margin-top: auto;
+}
