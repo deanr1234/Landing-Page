@@ -6,16 +6,20 @@ body {
     flex-direction: column;
 }
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
 
 /* All of the below is relating to the Header Content / Nav Bar / Logo. */
 .header-content-wrapper {
-    padding-left: 150px;
-    padding-right: 175px;
     display: flex;
     justify-content: space-between;
     align-content: center;
     background-color: #1f2937;
-    margin-top: 10px;
+    padding: 10px 150px;
 }
 
 .logo {
@@ -60,8 +64,8 @@ a {
     display: flex;
     align-items: center;
     background-color: #1f2937;
-    justify-content: flex-start;
-    gap: 650px;
+    justify-content: center;
+    gap: 100px;
     padding-left: 150px;
     padding-right: 150px
 }
@@ -70,15 +74,19 @@ a {
 
 /* All of the below is related to everything in the first subsection of the screen LHS. (Excluding header) */
 .left_align {
-    flex:1, 300px;
     flex-direction: column;
+    justify-content: flex-start;
     margin-left: 25px;
     margin-top: 0px;
-    padding-top: 100px;
+    padding-top: 20px;
     padding-bottom: 100px;
+    display: flex;
+    gap: 10px
 }
 
-h2 {
+
+
+.headline {
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
@@ -88,10 +96,9 @@ h2 {
 .subtext p {
     font-size: 18px;
     color: #e5e7eb;
-    margin-top: 0px;
 }
 
-.subtext button{
+.subtext button {
     background-color: #3882f6; 
     border: none;
     color: white;
@@ -101,8 +108,10 @@ h2 {
     display: inline-block;
     font-size: 16px;
     border-radius: 8px;
-    margin-top:0px;
-}
+    align-self: center;
+    margin-top: 20px;
+  }
+
 /* End of Main content upper LHS CSS*/
 
 /* All of the below is related to everything in the first subsection of the screen RHS. (Excluding header) */
