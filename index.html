@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Happy Paws Dog Walking and Care"
+      content="A local Dog Walking and Pet care service"
+    />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;0,900;1,100;1,300&display=swap");
     </style>
@@ -12,7 +16,7 @@
   </head>
   <body>
     <header>
-      <!-- Flexbox with Header content including Logo and navbar links. -->
+      <!-- Header Flexbox / Wrapper  -->
       <div class="header-wrapper">
         <div class="logo">
           <img
@@ -37,43 +41,41 @@
       </div>
     </header>
     <main>
-      <!-- Flexbox with Main content including A Left align A right Align -->
-
-      <div class="main-wrapper">
-        <div class="left-align">
-          <div class="headline-content">
-            <h2 class="headline">
-              Get your pup moving with our top-notch dog walking services!
-            </h2>
-            <p>
-              Unleash happiness with every step! Trust our expert dog walkers to
-              give your furry best friend the exercise, love, and attention they
-              deserve. Book now and watch tails wag!
-            </p>
-            <button
-              type="button"
-              onclick="alert('An agent will be in contact soon!')"
-            >
-              Enquire Now!
-            </button>
-          </div>
+      <!-- Hero Flexbox / Wrapper  -->
+      <div class="hero-wrapper">
+        <div class="hero-text">
+          <h2 class="hero-header">
+            Get your pup moving with our top-notch dog walking services!
+          </h2>
+          <p>
+            Unleash happiness with every step! Trust our expert dog walkers to
+            give your furry best friend the exercise, love, and attention they
+            deserve. Book now and watch tails wag!
+          </p>
+          <button
+            type="button"
+            onclick="alert('An agent will be in contact soon!')"
+          >
+            Enquire Now!
+          </button>
         </div>
 
-        <div class="right-align">
+        <div class="hero-image">
           <img
-            class="headline-img"
-            src="./images/headline-img.png"
+            src="./images/hero-img.webp"
             alt="An image of 2 golden labradors, 3 fox red labradors and a golden retriever on a country lane"
           />
         </div>
       </div>
-      <div class="secondary-wrapper">
-        <h3 class="secondary-header">Services Available Today</h3>
-        <div class="secondary-flex-display">
-          <div class="flex-display">
+
+      <!-- Services Flexbox / Wrapper-->
+      <div class="services-wrapper">
+        <h3 class="services-header">Services Available Today</h3>
+        <div class="services-content">
+          <div class="services-displays">
             <p>Solo Walks</p>
             <img
-              src="./images/solo-walk.png"
+              src="./images/solo-walk.webp"
               alt="A German shepard dog walking alone on the lead in a field."
             />
             <div>
@@ -82,10 +84,10 @@
               </p>
             </div>
           </div>
-          <div class="flex-display">
+          <div class="services-displays">
             <p>Group Adventures</p>
             <img
-              src="./images/group-walk.png"
+              src="./images/group-walk.webp"
               alt="A group of rowdy dogs galloping out from the sea towards the camera with their tongues out."
             />
             <div>
@@ -95,10 +97,10 @@
               </p>
             </div>
           </div>
-          <div class="flex-display">
+          <div class="services-displays">
             <p>Medication Administration</p>
             <img
-              src="./images/medication.png"
+              src="./images/medication.webp"
               alt="A Dog sitting with toy plastic tubes of syringes on the floor in-front of them."
             />
             <div>
@@ -108,10 +110,10 @@
               </p>
             </div>
           </div>
-          <div class="flex-display">
+          <div class="services-displays">
             <p>Pet Sitting Services</p>
             <img
-              src="./images/pet-sitting.png"
+              src="./images/pet-sitting.webp"
               alt="A woman sitting on the floor surrounded by 3 dogs and a cat."
             />
             <div>
@@ -122,10 +124,10 @@
             </div>
           </div>
         </div>
-        <div></div>
       </div>
-      <div class="tertiary-container">
-        <div class="tertiary-wrapper">
+      <!-- Testimonial Flexbox / Wrapper  -->
+      <div class="testimonial-container">
+        <div class="testimonial-wrapper">
           <p>
             "Our dog loves going on walks with Happy Paws! The team is friendly,
             reliable, and truly cares about our furry friend. We feel at ease
@@ -135,13 +137,14 @@
           <div><p>John Smith - May 2023.</p></div>
         </div>
       </div>
+
+      <div></div>
     </main>
 
     <!--  
        Current TODO: List / Bug list
       TODO: HTML and CSS Sub-footer (Call to action)     -->
 
-    <!-- Flexbox with the Footer Content -->
     <footer>
       <p>Copyright © Dean Reid 2023</p>
     </footer>
