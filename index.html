@@ -8,44 +8,73 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap");
     </style>
-    <title>TOP Landing Page</title>
+    <title>Happy Paws - Dog Walking and Care</title>
   </head>
   <body>
-    <!-- Flexbox with Header content including Logo and navbar links. -->
-    <div class="header-wrapper">
-      <h1 class="logo">Header Logo</h1>
-      <nav class="title_nav">
-        <ul>
-          <li><a href="url">header link one</a></li>
-          <li><a href="url">header link two</a></li>
-          <li><a href="url">header link three</a></li>
-        </ul>
-      </nav>
-    </div>
+    <header>
+      <!-- Flexbox with Header content including Logo and navbar links. -->
+      <div class="header-wrapper">
+        <div class="logo">
+          <img
+            class="logo-img"
+            src="./images/logo.svg"
+            alt="A Logo of a labrador retriever with the text Happy Paws"
+          />
+          <h1 class="logo">
+            <span class="l1">HAPPY PAWS</span
+            ><span class="l2"> &nbsp;DOG WALKING AND CARE</span>
+          </h1>
+        </div>
+        <nav class="title-nav">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Prices</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- Flexbox with Main content including A Left align A right Align -->
 
-    <!-- Flexbox with Main content including A Left align (Hero Main Text, A subtext, and a subscribe button), and A right Align (An Image). -->
-    <div class="main-wrapper">
-      <div class="left-align">
-        <h2 class="headline">This website is awesome</h2>
-        <div class="headline-subtext">
-          <p>
-            This website some subtext that goes under the main title. It's a
-            smaller font font and the color is lower in contrast.
-          </p>
-          <button type="button" onclick="alert('You have subscribed!')">
-            Subscribe!
-          </button>
+      <div class="main-wrapper">
+        <div class="left-align">
+          <div class="headline-content">
+            <h2 class="headline">
+              Get your pup moving with our top-notch dog walking services!
+            </h2>
+            <p>
+              Unleash happiness with every step! Trust our expert dog walkers to
+              give your furry best friend the exercise, love, and attention they
+              deserve. Book now and watch tails wag!
+            </p>
+            <button
+              type="button"
+              onclick="alert('An agent will be in contact soon!')"
+            >
+              Enquire Now!
+            </button>
+          </div>
+        </div>
+
+        <div class="right-align">
+          <img
+            class="headline-img"
+            src="./images/headline-img.png"
+            alt="An image of 2 golden labradors, 3 fox red labradors and a golden retriever on a country lane"
+          />
         </div>
       </div>
+    </main>
 
-      <div class="right-align">
-        <img
-          class="headline-img"
-          src="./images/placeholder.png"
-          alt="A placeholder image for future use"
-        />
-      </div>
-    </div>
+    <!--  
+       Current TODO: List / Bug list
+      TODO: HTML and CSS Secondary Content Wrapper (Some random information flexbox with images /text)
+      TODO: HTML and CSS Tertiary Content Wrapper (Quotes subsection)
+      TODO: HTML and CSS Sub-footer (Call to action)
+      BUG: Subtext in Headline Content only takes up 1 line @ 100% zoom. Compared to 3 lines in example. TO CHECK.  
+     -->
 
     <!-- Flexbox with the Footer Content -->
     <footer>

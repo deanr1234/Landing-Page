@@ -3,6 +3,30 @@ body {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: stretch;
+}
+
+/* * {
+  border: solid 1px red;
+} */
+
+header,
+main,
+footer {
+  flex-shrink: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #345a40;
+  color: #e5e7eb;
 }
 
 * {
@@ -16,32 +40,54 @@ body {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  background-color: #1f2937;
+  background-color: #112221;
   padding: 10px 150px;
 }
 
 .logo {
-  font-size: 24px;
-  color: #f9faf8;
-  margin-left: 25px;
+  font-size: 36px;
+  margin-left: 10px;
   align-items: center;
   display: flex;
 }
 
-nav ul {
-  display: flex;
-  align-content: center;
-  justify-content: center;
+.logo .l1 {
+  color: #fadfa4;
 }
 
-nav li,
-nav a {
-  list-style-type: none;
+.logo .l2 {
+  color: #f24236;
+}
+
+.logo-img {
+  width: 150px;
+  height: auto;
+}
+
+.title-nav {
+  display: flex;
+}
+
+.title-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 50px;
-  margin-right: 25px;
+}
+.title-nav li {
+  display: flex;
+  list-style-type: none;
+}
+
+.title-nav a {
   text-decoration: none;
-  font-size: 18px;
-  color: #e5e7eb;
+  font-size: 24px;
+  color: #fadfa4;
+  padding: 5px;
+}
+
+.title-nav a:hover {
+  background-color: #f24236;
 }
 
 /* End of Header Content Wrapper CSS*/
@@ -50,39 +96,43 @@ nav a {
 .main-wrapper {
   display: flex;
   align-items: center;
-  background-color: #1f2937;
-  justify-content: center;
-  gap: 100px;
-  padding-left: 150px;
-  padding-right: 150px;
+  background-color: #2d5431;
+  justify-content: space-between;
+  gap: 95px;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 /* All of the below is related to everything in the first subsection of the screen LHS. (Excluding header) */
 .left-align {
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 25px;
-  margin-top: 0px;
-  padding-top: 20px;
-  padding-bottom: 100px;
+  flex-basis: 100%;
   display: flex;
-  gap: 10px;
+  align-items: stretch;
+  max-width: 40%;
+}
+
+.headline-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space;
+  gap: 25px;
 }
 
 .headline {
   font-size: 48px;
   font-weight: bolder;
-  color: #f9faf8;
-  margin-top: 0px;
+  color: #f24236;
 }
 
-.headline-subtext p {
-  font-size: 18px;
-  color: #e5e7eb;
+.headline-content > p {
+  font-size: 26px;
+  font-style: italic;
+
+  color: #fadfa4;
 }
 
-.headline-subtext button {
-  background-color: #3882f6;
+.headline-content button {
+  background-color: #122121;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -91,8 +141,7 @@ nav a {
   display: inline-block;
   font-size: 16px;
   border-radius: 8px;
-  align-self: center;
-  margin-top: 20px;
+  align-self: flex-start;
 }
 
 /* End of Main content upper LHS CSS*/
@@ -102,25 +151,16 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 100px;
+  flex-shrink: 0;
 }
 
 .headline-img {
   display: flex;
-  max-width: 600px;
+  max-width: 750px;
   height: auto;
+  max-height: 7500px;
 }
 /* End of Main wrapper right-align CSS*/
 /* End of Main wrapper CSS*/
-
-/* All of the below is related to everything in the footer of the page */
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #1f2937;
-  color: #e5e7eb;
-  margin-top: auto;
-}
-/* End of Footer Content CSS*/
