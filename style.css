@@ -6,9 +6,12 @@ body {
   align-items: stretch;
 }
 
-/* * {
-  border: solid 1px red;
-} */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: solid 1px red; */
+}
 
 header,
 main,
@@ -23,25 +26,20 @@ main {
 footer {
   flex-shrink: 0;
   display: flex;
+  height: 100px;
   align-items: center;
   justify-content: center;
-  background-color: #345a40;
+  background-color: #122121;
   color: #e5e7eb;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-/* All of the below is relating to the Header Content / Nav Bar / Logo. */
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  background-color: #112221;
+  background-color: #122121;
   padding: 10px 150px;
+  gap: 100px;
 }
 
 .logo {
@@ -49,31 +47,34 @@ footer {
   margin-left: 10px;
   align-items: center;
   display: flex;
+  flex-shrink: 0;
 }
 
-.logo .l1 {
+.logo > .l1 {
   color: #fadfa4;
 }
 
-.logo .l2 {
+.logo > .l2 {
   color: #f24236;
 }
 
 .logo-img {
-  width: 150px;
+  width: 250px;
   height: auto;
 }
 
 .title-nav {
   display: flex;
+  flex-shrink: 0;
 }
 
 .title-nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 20px;
 }
+
 .title-nav li {
   display: flex;
   list-style-type: none;
@@ -90,25 +91,22 @@ footer {
   background-color: #f24236;
 }
 
-/* End of Header Content Wrapper CSS*/
-
-/* Top Main content CSS */
 .main-wrapper {
   display: flex;
   align-items: center;
   background-color: #2d5431;
   justify-content: space-between;
-  gap: 95px;
+  gap: 100px;
   padding-left: 300px;
   padding-right: 300px;
 }
 
-/* All of the below is related to everything in the first subsection of the screen LHS. (Excluding header) */
 .left-align {
   flex-basis: 100%;
   display: flex;
   align-items: stretch;
-  max-width: 40%;
+  max-width: 50%;
+  min-width: 500px;
 }
 
 .headline-content {
@@ -126,12 +124,11 @@ footer {
 
 .headline-content > p {
   font-size: 26px;
-  font-style: italic;
-
   color: #fadfa4;
+  font-style: italic;
 }
 
-.headline-content button {
+.headline-content > button {
   background-color: #122121;
   border: none;
   color: white;
@@ -144,23 +141,94 @@ footer {
   align-self: flex-start;
 }
 
-/* End of Main content upper LHS CSS*/
+.headline-content > button:active {
+  background-color: #000000;
+}
 
-/* All of the below is related to everything in the Main wrapper right-align CSS (Im. (Excluding header) */
 .right-align {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 100px;
   padding-bottom: 100px;
-  flex-shrink: 0;
+  max-width: 600px;
 }
 
 .headline-img {
   display: flex;
-  max-width: 750px;
+  max-width: 100%;
   height: auto;
-  max-height: 7500px;
+  border-radius: 15px;
+  max-height: 100%;
+  min-width: 400px;
 }
-/* End of Main wrapper right-align CSS*/
-/* End of Main wrapper CSS*/
+
+.secondary-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.secondary-header {
+  text-align: center;
+  font-size: 36px;
+  color: #f24236;
+  text-decoration: underline;
+}
+
+.secondary-flex-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.flex-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 450px;
+  gap: 20px;
+  font-size: 24px;
+}
+
+.flex-display > img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  border-width: 4px;
+  border-color: #f24236;
+}
+
+.flex-display > p {
+  font-weight: 700;
+  color: #2d5431;
+}
+
+.flex-display > div > p {
+  font-weight: 100;
+  font-size: 20px;
+  color: #122121;
+}
+
+.tertiary-container {
+  max-width: 100%;
+  background-color: #f24236;
+  color: #fadfa4;
+}
+.tertiary-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  font-size: 34px;
+  padding: 25px 150px;
+}
+
+.tertiary-wrapper > div > p {
+  font-weight: 600;
+  color: #000000;
+}
