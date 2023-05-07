@@ -34,6 +34,7 @@ During this project, this was my first thing I had to do where I had to think of
 <br/><br/>
 
 <h3>This project exposed me to the continued use of the following:</h3>
+
 - Flex Boxes Layouts.
 - HTML / CSS.
 - External Font Imports.
